@@ -2,7 +2,9 @@
 
 This repository is a snapshot of the ![original epiGBS pipeline](https://github.com/thomasvangurp/epiGBS) from November 2017. However, we included a [bug-fix](https://github.com/thomasvangurp/epiGBS/issues/26).
 
-# Running the pipeline
+We recommend that you use the [new pipeline](https://github.com/nioo-knaw/epiGBS2).
+
+# Running the pipeline without demultiplexing
 
 ## De novo reference creation
 
@@ -22,7 +24,7 @@ $EPIGBSSCRIPTS/de_novo_reference_creation/make_reference.py --forward $DMPFWD --
 rm -r $TMPDIR/*
 ```
 
-# Mapping and variant calling
+## Mapping and variant calling
 
 ```SH
 VARCALLOUT="$TEMPDIR/varCallOut"
